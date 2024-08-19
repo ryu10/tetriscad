@@ -1,20 +1,71 @@
 #!/usr/bin/python3
 
+from argparse import ArgumentParser
+
+def get_options(input_file):
+    parser = ArgumentParser()
+    parser.add_argument('input_file', type=str, help="input JSON file")
+    # parser.add_argument('-colormap', default='none', help="colormap JSON file")
+    # parser.add_argument('output_file', type=str, help="output scad file")
+    args = parser.parse_args()
+    return args
+
+### main
+
+# colormap = {
+#     "white":    ("white", "white", 0),
+#     "black":    ("black", "black", 1),
+#     "dark_blue":  ("black", "blue", 2),
+#     "light_blie":   ("white", "yellow", 3),
+#     "red":      ("cyan", "magenta",1),
+#     "green":    ("cyan", "yellow", 2),
+#     "blue":     ("magenta", "cyan", 3),
+#     "orange":   ("magenta", "yellow", 4),
+# }
+
 l = 3; # size of base
+
+# read tetrisdata from file '../colorscan/output.json'
+import json
+
+args = get_options('test')
+with open(args.input_file) as f:
+    tetrisdata_whole = json.load(f)
+    tetrisdata = tetrisdata_whole["field_info"]["withblock"]
+    x_max = tetrisdata_whole["field_info"]["width"]
+    y_max = tetrisdata_whole["field_info"]["height"]
+    shape_info = tetrisdata_whole["shape_info"]
+
+# represent 8 colors with a combination of two plate colors (in the order of lowwer, upper)
+colortable = {
+    "white":    ("white", "white"),
+    "black":    ("black", "black"),
+    "dark_blue":  ("black", "blue"),
+    "light_blie":   ("white", "yellow"),
+    "red":      ("cyan", "magenta"),
+    "green":    ("cyan", "yellow"),
+    "blue":     ("magenta", "cyan"),
+    "orange":   ("magenta", "yellow"),
+    "black":    ("white", "white") # this is an exception, represet black with white 
+}
+# add more colors
+colortable["black"] = ("black", "black")
+colortable["light_blue"] = ("white", "blue")
+colortable["dark_blue"] = ("black", "blue")
+
+# map cell index to color name
+index_to_colorname = {}
+for shape in shape_info.keys():
+    index_to_colorname[shape_info[shape]["index"]] = shape_info[shape]["color"]
 
 # print script_preamble
 
 print('''
 tetris_white=true;
-tetris_cyan=true;
-tetris_magenta=true;
-tetris_yellow=true;
+tetris_black=true;
+tetris_blue=true;
 
-
-// color("white") tetris_base1();
-// color("cyan") tetris_t1();
-// color("magenta") tetris_t2();
-''');
+''')
 
 # print script_parameters
 #   l;     // size of base
@@ -25,7 +76,7 @@ t=0.2002;  // thickness of top plates
 r=l/2;   // for base fillets
 d=2;     // for base fillets
 
-''' % (l));
+''' % (l))
 
 # definition block script snippet with color/loc
 #       loc x   (0..9)
@@ -54,38 +105,20 @@ union(){
         tetris_plate(1);
     }
 }
-''';
+'''
 
 # print script_block for each tile
 # loop 10 x 20
 #   - read a color
 #   - print a tile with color and position
 
-# read tetrisdata from file '../colorscan/output.json'
-import json
 
-with open('colorscan/output.json') as f:
-    tetrisdata_whole = json.load(f)
-    tetrisdata = tetrisdata_whole["tiles"]
-    tetrisdata_index = 0
-
-# represent 8 colors with a combination of two plate colors (in the order of lowwer, upper)
-colortable = {
-    "white":    ("white", "white"),
-    "lblue":    ("white", "cyan"),
-    "magenta":  ("white", "magenta"),
-    "yellow":   ("white", "yellow"),
-    "red":      ("cyan", "magenta"),
-    "green":    ("cyan", "yellow"),
-    "blue":     ("magenta", "cyan"),
-    "orange":   ("magenta", "yellow"),
-    "black":    ("white", "white") # this is an exception, represet black with white 
-}
-
-
-for y in range(20):
-    for x in range(10):
-        colorname = tetrisdata[y][x][2]
+tetrisdata_index = 0
+for y in range(y_max):
+    for x in range(x_max):
+        colorindex = tetrisdata[tetrisdata_index]
+        colorname = index_to_colorname[colorindex]
+        tetrisdata_index = tetrisdata_index + 1
         print("// X: %d, Y: %d, Colorname: %s" % (x, y, colorname))
         color_plate0 = colortable[colorname][0]
         color_plate1 = colortable[colorname][1]
@@ -105,7 +138,7 @@ module tetris_base(){
         }
     }    
 }
-''');
+''')
 
 # print module definition tetris_plate (l:base size, l2: plate size, d:height)
 #   (arg level = plate height (0, 1, 2, ...))
@@ -115,4 +148,4 @@ module tetris_plate(level){
     translate([o1,o1,d+t*level])
         cube([l2, l2, t]);
 }
-''');
+''')
