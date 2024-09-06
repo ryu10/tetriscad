@@ -23,7 +23,7 @@ colormap = {
     "orange":   ("magenta", "yellow", 4),
 }
 
-l = 3; # size of base
+l = 2; # size of base
 
 # read tetrisdata from file '../colorscan/output.json'
 import json
