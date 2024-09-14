@@ -1,0 +1,877 @@
+### 例: 
+```
+"shape_info": {
+  "shapeNone": {"index": 0, "color": "none"}, 
+  "shapeI": {"index": 1, "color": "red"}, 
+  "shapeL": {"index": 2, "color": "green"}, 
+  "shapeJ": {"index": 3, "color": "purple"}, 
+  "shapeT": {"index": 4, "color": "gold"}, 
+  "shapeO": {"index": 5, "color": "pink"}, 
+  "shapeS": {"index": 6, "color": "blue"}, 
+  "shapeZ": {"index": 7, "color": "yellow"}
+},
+```
+### `1:onigiri`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "lightgray"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "white"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 1},
+    "lgrey": {"color": ["black", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 13
+}
+```
+### `2:manji`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "red"},
+    {"index": 2, "color": "white"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "red": {"color": ["yellow", "magenta"], "depth": 1}
+  },
+  "height_limit": 15
+}
+```
+### `3:cartoon charactor`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "white"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "blue"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "blue": {"color": ["magenta", "cyan"], "depth": 1}
+  },
+  "height_limit": 15
+}
+```
+### `4:heart`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "white"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "pink"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "pink"},
+    {"index": 7, "color": "pink"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "pink": {"color": ["magenta", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `5:hamburger_shop`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "yellow"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "yellow"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 15
+}
+```
+### `6:parking`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "blue"},
+    {"index": 4, "color": "blue"},
+    {"index": 5, "color": "blue"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "blue": {"color": ["magenta", "cyan"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `7:team`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "white"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "magenta"},
+    {"index": 5, "color": "magenta"},
+    {"index": 6, "color": "magenta"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "cyan": {"color": ["magenta", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `8:happy_new_year_2023`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "blue"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "blue"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "blue"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "blue": {"color": ["magenta", "cyan"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `9:taka`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "blue"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "blue"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "blue"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "blue": {"color": ["magenta", "cyan"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `10:python_logo`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "yellow"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `11:yoshi`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `12:neko`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "grey"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "grey"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "red"},
+    {"index": 7, "color": "yellow"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "grey":  {"color": ["black", "white"], "depth": 1},
+    "red":   {"color": ["yellow", "magenta"], "depth": 0},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `13:kyubei`
+### `14:question_block`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "grey"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "orange"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "yellow"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "grey":  {"color": ["black", "white"], "depth": 0},
+    "orange":   {"color": ["magenta", "yellow"], "depth": 2},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `15:coin`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "grey"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "grey":  {"color": ["black", "white"], "depth": 0},
+    "orange":   {"color": ["magenta", "yellow"], "depth": 2},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `16:clefairy`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "pink"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "magenta"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "pink":  {"color": ["magenta", "white"], "depth": 1},
+    "magenta":{"color": ["magenta", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `17:jigglypuff`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "green"},
+    {"index": 4, "color": "pink"},
+    {"index": 5, "color": "magenta"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "dpink"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "green": {"color": ["black", "cyan"], "depth": 1},
+    "pink":  {"color": ["magenta", "white"], "depth": 2},
+    "magenta":{"color": ["magenta", "magenta"], "depth": 1}
+    "dpink":{"color": ["black", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `18:docker`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "dblue"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "lblue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "blue": {"color": ["cyan", "cyan"], "depth": 2},
+    "dblue":  {"color": ["black", "cyan"], "depth": 2},
+    "lblue":{"color": ["cyan", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `19:tux`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "yellow"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "yellow": {"color": ["cyan", "cyan"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `20:droid`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "green"},
+    {"index": 3, "color": "green"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "green"},
+    {"index": 7, "color": "green"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth":0},
+    "green": {"color": ["cyan", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `21:jenkins`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "red"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgrey"},
+    {"index": 7, "color": "lbrown"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth":2},
+    "lgrey": {"color": ["black", "white"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "lbrown": {"color": ["yellow", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `22:firefox`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "red"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "yellow"},
+    {"index": 7, "color": "yellow"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 2},
+    "red": {"color": ["yellow", "magenta"], "depth": 3},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `23:gopher`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "grey"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "blue"},
+    {"index": 7, "color": "blue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 3},
+    "grey": {"color": ["black", "white"], "depth": 2},
+    "blue": {"color": ["yellow", "cyan"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `24:goomba`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "brown"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "blue"},
+    {"index": 7, "color": "lyellow"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 3},
+    "brown": {"color": ["magenta", "yellow"], "depth": 2},
+    "lyellow": {"color": ["yellow", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `25:toad`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "red"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgreen"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "red": {"color": ["magenta", "magenta"], "depth": 1},
+    "lgreen": {"color": ["cyan", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `26:super_star`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "yellow"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "grey"},
+    {"index": 7, "color": "grey"}
+  ],
+  "filament_info": {
+    "grey": {"color": ["black", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `27:fire_flower`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "brown"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lblue"},
+    {"index": 7, "color": "green"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "orange": {"color": ["magenta", "yellow"], "depth": 1},
+    "brown": {"color": ["black", "yellow"], "depth": 1},
+    "lblue": {"color": ["white", "white"], "depth": 0},
+    "green": {"color": ["white", "black"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `28:ie_logo`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "lblue"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "yellow"},
+    {"index": 7, "color": "green"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 2},
+    "lblue": {"color": ["white", "cyan"], "depth": 1},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `29:edge_logo`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "lblue"},
+    {"index": 3, "color": "dblue"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "green"},
+    {"index": 7, "color": "blue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "blue": {"color": ["magenta", "cyan"], "depth": 2},
+    "lblue": {"color": ["cyan", "white"], "depth": 3},
+    "dblue": {"color": ["black", "cyan"], "depth": 1},
+    "green": {"color": ["cyan", "yellow"], "depth": 1}
+  },
+  "height_limit": 12
+}
+```
+### `30:puyo_green`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "green"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgreen"},
+    {"index": 7, "color": "dblue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "lgreen": {"color": ["magenta", "yellow"], "depth": 1},
+    "dgreen": {"color": ["magenta", "yellow"], "depth": 2},
+    "green": {"color": ["magenta", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `31:puyo_red`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "red"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "green"},
+    {"index": 7, "color": "dpurple"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "red": {"color": ["magenta", "magenta"], "depth": 1},
+    "dpurple": {"color": ["blue", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `32:puyo_yellow`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "green"},
+    {"index": 7, "color": "dyellow"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1},
+    "dyellow": {"color": ["black", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `33:puyo_blue`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "green"},
+    {"index": 7, "color": "dblue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "blue": {"color": ["yellow", "cyan"], "depth": 1},
+    "dblue": {"color": ["magenta", "cyan"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```
+### `34:tweet`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "lblue"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "lblue": {"color": ["white", "cyan"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `35:art`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["white", "black"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `36:toypoodle`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "lbrown"},
+    {"index": 3, "color": "lbrown"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "red"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "lbrown": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["magenta", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
+### `37:pome`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "lbrown"},
+    {"index": 3, "color": "lbrown"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "red"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "lbrown": {"color": ["yellow", "white"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `38:karaage-san(r)`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "red"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `39:karaage-san(l)`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `40:nekojistar-san(l)`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```
+### `41:nekojistar-san(r)`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "orange"},
+    {"index": 3, "color": "orange"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "orange": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 2}
+  },
+  "height_limit": 16
+}
+```

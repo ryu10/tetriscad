@@ -1,0 +1,20 @@
+### `35:art`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "black"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["white", "black"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```

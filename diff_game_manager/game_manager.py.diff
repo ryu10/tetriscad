@@ -1,0 +1,42 @@
+diff --git a/game_manager/game_manager.py b/game_manager/game_manager.py
+index 52cff83..4ec9a3d 100644
+--- a/game_manager/game_manager.py
++++ b/game_manager/game_manager.py
+@@ -765,6 +765,13 @@ class Game_Manager(QMainWindow):
+                         "mode":"none",
+                       },
+                   }
++        if(self.mode == "art"):
++            status["field_info"] = {
++                        "width": "none",
++                        "height": "none",
++                        "backboard": "none",
++                        "withblock": "none", # back board with current block
++                      } 
+         # update status
+         ## debug_info
+         status["debug_info"]["line_score_stat"] = self.tboard.line_score_stat
+@@ -806,6 +813,13 @@ class Game_Manager(QMainWindow):
+         status["judge_info"]["block_index"] = self.block_index
+         status["judge_info"]["block_num_max"] = self.BlockNumMax
+         status["judge_info"]["mode"] = self.mode
++
++        if(self.mode == "art"):
++            status["field_info"]["width"] = BOARD_DATA.width
++            status["field_info"]["height"] = BOARD_DATA.height
++            status["field_info"]["backboard"] = BOARD_DATA.getData()
++            status["field_info"]["withblock"] = BOARD_DATA.getDataWithCurrentBlock()
++
+         return json.dumps(status)
+ 
+     ###############################################
+@@ -1125,6 +1139,9 @@ class Board(QFrame):
+             self.OutputLogData(isPrintLog = True)
+ 
+             #sys.exit(app.exec_())
++            while True:
++                1
++
+             sys.exit(0)
+ 
+ if __name__ == '__main__':

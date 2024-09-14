@@ -1,0 +1,6 @@
+ cd filament_colors
+ 
+ cat ../shape_list.md| awk -f data/outshapeinfo.awk > alldata.txt
+
+ split -p '^###' -d  alldata.txt filament_colors 
+ for x (filament_*); do cat  $x  | grep -v '^```' | grep -v '^###' | sed 's/^},/}/' > $x.json ; done 

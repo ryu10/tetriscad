@@ -1,0 +1,23 @@
+### `30:puyo_green`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "green"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgreen"},
+    {"index": 7, "color": "dblue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "lgreen": {"color": ["magenta", "yellow"], "depth": 1},
+    "dgreen": {"color": ["magenta", "yellow"], "depth": 2},
+    "green": {"color": ["magenta", "yellow"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```

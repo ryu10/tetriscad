@@ -12,8 +12,6 @@ A2DEFAULT = "arg3_default"
 A4 = '--arg4'
 A4DEFAULT = "arg4_default"
 
-
-
 def get_options():
     parser = ArgumentParser(prog=os.path.basename(__file__), description='A test of argparse', epilog='*** Have Fun!')
     parser.add_argument(A1, default=A1DEFAULT, type=str, help='arg1 description')

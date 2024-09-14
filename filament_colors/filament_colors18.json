@@ -1,0 +1,20 @@
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "blue"},
+    {"index": 3, "color": "black"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "dblue"},
+    {"index": 6, "color": "black"},
+    {"index": 7, "color": "lblue"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 1},
+    "blue": {"color": ["cyan", "cyan"], "depth": 2},
+    "dblue":  {"color": ["black", "cyan"], "depth": 2},
+    "lblue":{"color": ["cyan", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}

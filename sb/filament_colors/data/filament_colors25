@@ -1,0 +1,22 @@
+### `25:toad`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "red"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "black"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgreen"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth": 2},
+    "red": {"color": ["magenta", "magenta"], "depth": 1},
+    "lgreen": {"color": ["cyan", "magenta"], "depth": 1}
+  },
+  "height_limit": 16
+}
+```

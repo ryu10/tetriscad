@@ -1,0 +1,20 @@
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "black"},
+    {"index": 3, "color": "red"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "red"},
+    {"index": 6, "color": "lgrey"},
+    {"index": 7, "color": "lbrown"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "black": {"color": ["black", "black"], "depth":2},
+    "lgrey": {"color": ["black", "white"], "depth": 1},
+    "red": {"color": ["yellow", "magenta"], "depth": 2},
+    "lbrown": {"color": ["yellow", "white"], "depth": 1}
+  },
+  "height_limit": 16
+}

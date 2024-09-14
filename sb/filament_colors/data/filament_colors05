@@ -1,0 +1,20 @@
+### `5:hamburger_shop`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "yellow"},
+    {"index": 2, "color": "yellow"},
+    {"index": 3, "color": "white"},
+    {"index": 4, "color": "yellow"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "white"},
+    {"index": 7, "color": "white"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "yellow": {"color": ["yellow", "yellow"], "depth": 1}
+  },
+  "height_limit": 15
+}
+```

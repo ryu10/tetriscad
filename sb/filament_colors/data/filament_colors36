@@ -1,0 +1,22 @@
+### `36:toypoodle`
+```
+{
+  "color_info": [
+    {"index": 0, "color": "white"},
+    {"index": 1, "color": "white"},
+    {"index": 2, "color": "lbrown"},
+    {"index": 3, "color": "lbrown"},
+    {"index": 4, "color": "white"},
+    {"index": 5, "color": "white"},
+    {"index": 6, "color": "red"},
+    {"index": 7, "color": "black"}
+  ],
+  "filament_info": {
+    "white": {"color": ["white", "white"], "depth": 0},
+    "lbrown": {"color": ["magenta", "yellow"], "depth": 1},
+    "red": {"color": ["magenta", "magenta"], "depth": 2},
+    "black": {"color": ["black", "black"], "depth": 1}
+  },
+  "height_limit": 14
+}
+```
