@@ -1,16 +1,21 @@
 # TETRISCAD
 
-[Tetris 学習プロジェクト](https://github.com/seigot/tetris)の Tetris Art フィールドデータをカラー 3D プリンタへ出力します。また、PNG 画像を低解像度ピクセル化してカラー 3D プリンタへ出力します。
+[Tetris 学習プロジェクト](https://github.com/seigot/tetris)の Tetris Art フィールドデータをカラー 3D プリンタへ出力します。
+<!-- また、PNG 画像を低解像度ピクセル化してカラー 3D プリンタへ出力します。-->
 
 ![レモンを被るからあげ氏](media/karaages.png)
-![Netscapeロゴ](media/netscape.png)
+<!-- ![Netscapeロゴ](media/netscape.png) -->
 
 ## Tetris 出力を 3D プリントする
 
 @seigot 氏その他による Tetris [学習プログラムプロジェクト](https://github.com/seigot/tetris) に含まれる、Tetris Art のゲームフィールドをプリントします。以下の点に注意してください。
 
 * そのままではフィールドデータが `result.json` へ出力されないので、 `game_manager.py` を[すこしだけ改変します](./diff_game_manager)。
-* tetris プロジェクト[ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿って art リプレイを実行します。例：`python start.py -l1 -m art --art_config_filepath config/art/art_config_sample10.json` 、望みの画像がいったん完成ら ctrl-C で実行を停止します。
+* tetris プロジェクト[ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿って art リプレイを実行します。
+
+    例：`python start.py -l1 -m art --art_config_filepath config/art/art_config_sample10.json`
+
+* 望みの画像が完成したら Ctrl-C で実行を止めます。また、`--BlockNumMax` オプションを使って任意の世代数で実行を停止できます。
 
 
 ### 実装メモ
