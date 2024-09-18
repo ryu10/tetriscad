@@ -8,7 +8,7 @@ def get_options():
     parser = ArgumentParser()
     parser.add_argument('-r', '--result', default='none', type=str, help="Tetris Result JSON file with field_info")
     parser.add_argument('-f', '--filament', default='none', type=str, help="Filament color definition JSON file")
-    parser.add_argument('-s', '--size', default=2, type=int, help="Brick size in mm")
+    parser.add_argument('-s', '--size', default=2, type=float, help="Brick size in mm")
     parser.add_argument('-c', '--cmdfile', default='cmd.sh', type=str, help="STL build command file name")
     args = parser.parse_args()
     return args
@@ -62,7 +62,7 @@ def main():
     # print scad variables
     #  - the size of a brick is specified with args.size
     print('''
-    l=%d;     // size of base brick
+    l=%f;     // size of base brick
     l2=l*0.9;  // size of top plate
     t=0.2002;  // thickness of top plates
     r=l/2;   // param for base fillets
@@ -84,21 +84,21 @@ def main():
     #    plate1_color
     #    brick_depth for plate1
     script_block = '''
-    translate([%d, %d, 0])
+    translate([%f, %f, 0])
     union(){
         if(%s==true){
             color("%s")
-            tetris_base(%d);
+            tetris_base(%f);
         }
 
         if(%s==true){
             color("%s")
-            tetris_plate(0, %d);
+            tetris_plate(0, %f);
         }
 
         if(%s==true){
             color("%s")
-            tetris_plate(1, %d);
+            tetris_plate(1, %f);
         }
     }
 
@@ -123,7 +123,7 @@ def main():
         color_row.reverse()
         for x in range(10):
             filament_attr = get_color(filament, color_row[x]) # returns (color, color_plate0, color_plate1, depth)
-            print("// X: %d, Y: %d, Colorname: %s" % (x, y, filament_attr[0]))
+            print("// X: %f, Y: %f, Colorname: %s" % (x, y, filament_attr[0]))
             color_plate0 = filament_attr[1]
             color_plate1 = filament_attr[2]
             print(script_block % (x*args.size, y*args.size, 
