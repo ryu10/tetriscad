@@ -14,7 +14,7 @@
 
 // patch についての説明を追加する
 
-## フィールドデータの作成
+### フィールドデータの作成
 
 1.  tetris プロジェクト[ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿って art リプレイを実行します。
 
@@ -29,7 +29,7 @@
 
 `tetris art` の完成画像は[このドキュメント](./shape_list.md)に記載してあります。
 
-## SCAD ファイルの作成
+### SCAD ファイルの作成
 
 1. フィールドデータを色付き 3D ブロックによる CAD データに変換します。
 
@@ -43,7 +43,7 @@
 
     // img
 
-## STL ファイル生成
+### STL ファイル生成
 
 1. 単色フィラメント用 STL ファイルを生成します。
 
@@ -65,12 +65,12 @@
     art_14_yellow.stl
     ```
 
-## カラー 3D プリント
+### カラー 3D プリント
 
 1. 前節で生成した複数の STL ファイルを混成してカラー 3D プリンタでプリントします。
 <br> <br> Bambu A1 シリーズの場合は以下の手順でプリントします。
 
-    1. 上記の stl ファイルを Finder ないしファイルエクスプローラで複数選択します。
+    1. 生成された stl ファイルを Finder ないしファイルエクスプローラで複数選択します。
     1. 選択したファイルを Bambu Studio の Prepare タブへドロップします。
     1. "Load these files as a single object with multiple parts?" と尋ねられるので "Yes" を選択します。
     1. カラーフィラメントフィーダーにフィラメントをセットし、Bambu Studio の Filament 領域で正しい色が設定されていることを確認します。必要に応じて手動で設定します。
@@ -85,7 +85,7 @@
 * `tetris_art_scad_gen.py`
 * `art_*.cmd`
 
-### 実行例
+#### 実行例
 
 `1:onigiri`         高さ 13
 `4:heart`           高さ 16
@@ -137,7 +137,7 @@ python3 tetris_art_scad_gen.py --result results/result_14.json --filament filame
 `40:nekojistar-san(l)`
 `41:nekojistar-san(r)`
 
-
+<!--
 ## PNG 画像を 3D プリントする
 
 ### 実装メモ
@@ -156,7 +156,7 @@ python3 tetris_art_scad_gen.py --result results/result_14.json --filament filame
 
 ### その他メモ (できれば)
 
-* `tetris_art_scad_gen.py` と `art_scad_gen.py` を統合する
+* `tetris_art_scad_gen.py` と `art_scad_gen.py` を統合
 
-
+-->
 
