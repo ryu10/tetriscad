@@ -16,7 +16,7 @@
 
 ### フィールドデータの作成
 
-1.  tetris プロジェクト[ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿って art リプレイを実行します。
+1.  [tetris art ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿ってリプレイを実行します。
 
     例：`python start.py -l1 -m art --art_config_filepath config/art/art_config_sample14.json -d100 --BlockNumMax 600`
 
