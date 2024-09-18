@@ -55,7 +55,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![onigiri](../media/sample_1.png)
+![onigiri](media/sample_1.png)
 
 手動作成したフィラメント色指定：
 
@@ -96,7 +96,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![manji](../media/sample_2.png)
+![manji](media/sample_2.png)
 
 手動作成したフィラメント色指定：
 
@@ -136,7 +136,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
   ```
 
-![cartoon character](../media/sample_3.png)
+![cartoon character](media/sample_3.png)
 
 
 手動作成したフィラメント色指定：
@@ -177,7 +177,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![heart](../media/sample_4.png)
+![heart](media/sample_4.png)
 
 手動作成したフィラメント色指定：
 
@@ -217,7 +217,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![hamburger](../media/sample_5.png)
+![hamburger](media/sample_5.png)
 
 手動作成したフィラメント色指定：
 
@@ -256,7 +256,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
     "shapeZ": "0xff1943"
   }
 ```
-![parking](../media/sample_6.png)
+![parking](media/sample_6.png)
 
 手動作成したフィラメント色指定：
 
@@ -296,7 +296,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![team](../media/sample_7.png)
+![team](media/sample_7.png)
 
 手動作成したフィラメント色指定：
 
@@ -336,7 +336,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![happy_new_year_2023](../media/sample_8.png)
+![happy_new_year_2023](media/sample_8.png)
 
 手動作成したフィラメント色指定：
 
@@ -376,7 +376,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![taka](../media/sample_9.png)
+![taka](media/sample_9.png)
 
 手動作成したフィラメント色指定：
 
@@ -418,7 +418,7 @@ tetris リポジトリの tetris art プログラムは24ビットカラーで�
   }
 ```
 
-![python_logo](../media/sample_10.png)
+![python_logo](media/sample_10.png)
 
 手動作成したフィラメント色指定：
 
@@ -460,7 +460,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x000000"
   }
 ```
-![yoshi](../media/sample_11.png)
+![yoshi](media/sample_11.png)
 
 手動作成したフィラメント色指定：
 
@@ -502,7 +502,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![neko](../media/sample_12.png)
+![neko](media/sample_12.png)
 
 手動作成したフィラメント色指定：
 
@@ -553,7 +553,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![question_block](../media/sample_14.png)
+![question_block](media/sample_14.png)
 
 手動作成したフィラメント色指定：
 
@@ -598,7 +598,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![coin](../media/sample_15.png)
+![coin](media/sample_15.png)
 
 手動作成したフィラメント色指定：
 
@@ -643,7 +643,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![clefairy](../media/sample_16.png)
+![clefairy](media/sample_16.png)
 
 手動作成したフィラメント色指定：
 
@@ -687,7 +687,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![jigglypuff](../media/sample_17.png)
+![jigglypuff](media/sample_17.png)
 
 手動作成したフィラメント色指定：
 
@@ -733,7 +733,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![docker](../media/sample_18.png)
+![docker](media/sample_18.png)
 
 手動作成したフィラメント色指定：
 
@@ -778,7 +778,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![tux](../media/sample_19.png)
+![tux](media/sample_19.png)
 
 手動作成したフィラメント色指定：
 
@@ -821,7 +821,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![droid](../media/sample_20.png)
+![droid](media/sample_20.png)
 
 手動作成したフィラメント色指定：
 
@@ -862,7 +862,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x808080"
   }
 ```
-![jenkins](../media/sample_21.png)
+![jenkins](media/sample_21.png)
 
 手動作成したフィラメント色指定：
 
@@ -905,7 +905,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0xff4500"
   }
 ```
-![firefox](../media/sample_22.png)
+![firefox](media/sample_22.png)
 
 手動作成したフィラメント色指定：
 
@@ -947,7 +947,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x4169e1"
   }
 ```
-![gopher](../media/sample_23.png)
+![gopher](media/sample_23.png)
 
 手動作成したフィラメント色指定：
 
@@ -989,7 +989,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0xffdead"
   }
 ```
-![goomba](../media/sample_24.png)
+![goomba](media/sample_24.png)
 
 手動作成したフィラメント色指定：
 
@@ -1031,7 +1031,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0xffffff"
   }
 ```
-![toad](../media/sample_25.png)
+![toad](media/sample_25.png)
 
 手動作成したフィラメント色指定：
 
@@ -1073,7 +1073,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0xc0c0c0"
   }
 ```
-![super_star](../media/sample_26.png)
+![super_star](media/sample_26.png)
 
 手動作成したフィラメント色指定：
 
@@ -1114,7 +1114,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x008000"
   }
 ```
-![fire_flower](../media/sample_27.png)
+![fire_flower](media/sample_27.png)
 
 手動作成したフィラメント色指定：
 
@@ -1158,7 +1158,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x008000"
   }
 ```
-![ie_logo](../media/sample_28.png)
+![ie_logo](media/sample_28.png)
 
 手動作成したフィラメント色指定：
 
@@ -1200,7 +1200,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0x1e90ff"
   }
 ```
-![edge_logo](../media/sample_29.png)
+![edge_logo](media/sample_29.png)
 
 手動作成したフィラメント色指定：
 
@@ -1243,7 +1243,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![puyo_green](../media/sample_30.png)
+![puyo_green](media/sample_30.png)
 
 手動作成したフィラメント色指定：
 
@@ -1287,7 +1287,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     "shapeZ": "0xdc143c"
   }
 ```
-![puyo_red](../media/sample_31.png)
+![puyo_red](media/sample_31.png)
 
 手動作成したフィラメント色指定：
 
@@ -1330,7 +1330,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![puyo_yellow](../media/sample_32.png)
+![puyo_yellow](media/sample_32.png)
 
 手動作成したフィラメント色指定：
 
@@ -1373,7 +1373,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![puyo_blue](../media/sample_33.png)
+![puyo_blue](media/sample_33.png)
 
 手動作成したフィラメント色指定：
 
@@ -1418,7 +1418,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![tweet](../media/sample_34.png)
+![tweet](media/sample_34.png)
 
 手動作成したフィラメント色指定：
 
@@ -1461,7 +1461,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![art](../media/sample_35.png)
+![art](media/sample_35.png)
 
 手動作成したフィラメント色指定：
 
@@ -1504,7 +1504,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![toypoodle](../media/sample_36.png)
+![toypoodle](media/sample_36.png)
 
 手動作成したフィラメント色指定：
 
@@ -1550,7 +1550,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![pome](../media/sample_37.png)
+![pome](media/sample_37.png)
 
 手動作成したフィラメント色指定：
 
@@ -1596,7 +1596,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![karaage-san(r)](../media/sample_38.png)
+![karaage-san(r)](media/sample_38.png)
 
 手動作成したフィラメント色指定：
 
@@ -1642,7 +1642,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![karaage-san(l)](../media/sample_39.png)
+![karaage-san(l)](media/sample_39.png)
 
 手動作成したフィラメント色指定：
 
@@ -1670,7 +1670,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
 
 900 回に近づくと盤面が崩れる
 
-![karaage-san(l) bad](../media/sample_39_bad.png)
+![karaage-san(l) bad](media/sample_39_bad.png)
 
 
 ### `40:nekojistar-san(l)`
@@ -1693,7 +1693,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![nekojistar-san(l)](../media/sample_40.png)
+![nekojistar-san(l)](media/sample_40.png)
 
 手動作成したフィラメント色指定：
 
@@ -1739,7 +1739,7 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
   }
 ```
 
-![nekojistar-san(r)](../media/sample_41.png)
+![nekojistar-san(r)](media/sample_41.png)
 
 手動作成したフィラメント色指定：
 

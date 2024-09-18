@@ -66,7 +66,7 @@ def main():
     l2=l*0.9;  // size of top plate
     t=0.2002;  // thickness of top plates
     r=l/2;   // param for base fillets
-    d=2;     // param for base fillets
+    d0=l*0.3;     // param for base fillets
 
     ''' % (args.size))
 
@@ -133,7 +133,7 @@ def main():
     # print module definition tetris_base (l:size, d:height, r:fillet_radius)
     print('''
     module tetris_base(d){
-        cube([l, l, l*.5+d]);
+        cube([l, l, l*.5+d*d0]);
     }
 
     ''')
@@ -142,7 +142,7 @@ def main():
     print('''
     module tetris_plate(level, d){
         o1=(l-l2)/2;
-        translate([o1,o1,l*.5+d+t*level])
+        translate([o1,o1,l*.5+d*d0+t*level])
             cube([l2, l2, t]);
     }
 

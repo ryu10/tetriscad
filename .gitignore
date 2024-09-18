@@ -1,2 +1,4 @@
-sb
+sb/
+build/*
+results/*
 .DS_Store
