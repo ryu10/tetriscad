@@ -3,7 +3,8 @@
 [Tetris 学習プロジェクト](https://github.com/seigot/tetris)の Tetris Art フィールドデータをカラー 3D プリンタへ出力します。
 <!-- また、PNG 画像を低解像度ピクセル化してカラー 3D プリンタへ出力します。-->
 
-![レモンを被るからあげ氏](media/karaages.png)
+![qbox](media/qbox.png)
+<!-- ![レモンを被るからあげ氏](media/karaages.png) -->
 <!-- ![Netscapeロゴ](media/netscape.png) -->
 
 ## Tetris 出力を 3D プリントする
@@ -12,49 +13,45 @@
 
 * そのままではフィールドデータが `result.json` へ出力されないので、 `game_manager.py` を[すこしだけ改変します](./diff_game_manager)。
 
-// patch についての説明を追加する
+<!-- patch についての説明を追加する -->
 
 ### フィールドデータの作成
 
-1.  [tetris art ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿ってリプレイを実行します。
+1.  [Tetris Art ドキュメント](https://github.com/seigot/tetris/blob/master/doc/files/art.md)に沿ってリプレイを実行します。
 
-    例：`python start.py -l1 -m art --art_config_filepath config/art/art_config_sample14.json -d100 --BlockNumMax 600`
+    例：`python start.py -l1 -m art --art_config_filepath config/art/art_config_sample14.json -d30 --BlockNumMax 600`
 
 
 1. 望みの画像が完成したら Ctrl-C で実行を止めます。また、`--BlockNumMax` オプションを使って任意の世代で実行を停止できます。
 
-1.  出力されたフィールドデータファイル `result.json` を別名で保存します：`cp result.json ${tetriscad_home}/result/result_14.json` 
+1.  出力されたフィールドデータファイル `result.json` を別名で保存します。例：`cp result.json ${tetriscad_home}/result/result_14.json` 
 
-※ `${tetriscad_home}` は本リポジトリディレクトリへのパス
+    ※ `${tetriscad_home}` は本リポジトリディレクトリへのパス
 
-`tetris art` の完成画像は[このドキュメント](./shape_list.md)に記載してあります。
+    `Tetris Art` の完成画像は[このドキュメント](./shape_list.md)に収録されています。
 
 ### SCAD ファイルの作成
 
-1. フィールドデータを色付き 3D ブロックによる CAD データに変換します。
+1. フィールドデータを色付き 3D ブロックで構成される CAD データに変換します。
 
     ```
-    python3 tetris_art_scad_gen.py --result results/result_14.json --filament filament_colors/filament_colors14.json --cmdfile build/a14.cmd -s 10  > build/art_14.scad
+    python3 tetris_art_scad_gen.py --result results/result_14.json --filament filament_colors/filament_colors14.json --cmdfile build/a14cmd.sh -s 10  > build/art_14.scad
     ```
 
-    ※ `filament_colors/filament_colors*.json` はブロックの色とフィラメントデータの対応パラメータ
+    ※ `filament_colors/filament_colors*.json` はブロックの色とフィラメントデータの対応パラメータ。[このドキュメント](./shape_list.md)を参照。
 
-1. `build/art_14.scad` を 1. [openscad](https://openscad.org/) で開いて確認します。
+1. `build/art_14.scad` を [openscad](https://openscad.org/) で開いて確認します。
 
-    // img
-
+![openscad](media/openscad.png)
 ### STL ファイル生成
 
 1. 単色フィラメント用 STL ファイルを生成します。
 
     ```
     cd build
-    chmod +x a14.cmd
-    ./a14.cmd art_14
+    chmod +x a14cmd.sh
+    ./a14cmd.sh art_14
     ```
-
-    // 拡張子を .sh に修正
-
 
 1.  以下のファイルが `build/art_14` 下に生成されます。
 
@@ -77,14 +74,21 @@
     2. Process > Objects を選択し、stl ファイルのツリーを展開して各 stl ファイルにフィラメントを割り当てます。ファイル名に合わせてフィラメント色を選択します。
     1. その他の設定が終わったら Slice plate、Print plate の順に進めます。
 
-    数十分〜数時間でプリントが完了します。このリポジトリのプログラムはフィラメント交換回数が抑えられるように色設定が制限されています。
-    
+![dialog](media/bambust_dialog.png)
 
+![filaments](media/bambust_filamentcol.png)
+
+数十分〜数時間でプリントが完了します。このリポジトリのプログラムはフィラメント交換回数が抑えられるように色設定が制限されています。
+    
+<!--
 #### コマンド（プログラム）
 
 * `tetris_art_scad_gen.py`
 * `art_*.cmd`
 
+-->
+
+<!--
 #### 実行例
 
 `1:onigiri`         高さ 13
@@ -137,6 +141,7 @@ python3 tetris_art_scad_gen.py --result results/result_14.json --filament filame
 `40:nekojistar-san(l)`
 `41:nekojistar-san(r)`
 
+--> 
 <!--
 ## PNG 画像を 3D プリントする
 
