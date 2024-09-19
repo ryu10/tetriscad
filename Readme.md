@@ -9,9 +9,9 @@
 
 ## Tetris 出力を 3D プリントする
 
-@seigot 氏その他による Tetris [学習プログラムプロジェクト](https://github.com/seigot/tetris) に含まれる、Tetris Art のゲームフィールドを 3D プリントします。以下の点に注意してください。
+@seigot 氏その他による Tetris [学習プログラムプロジェクト](https://github.com/seigot/tetris) に含まれる、Tetris Art のゲームフィールドを 3D プリントします。
 
-* そのままではフィールドデータが `result.json` へ出力されないので、 `game_manager.py` を[すこしだけ改変します](./diff_game_manager)。
+フィールドデータを `result.json` へ出力するために `game_manager.py` を[すこしだけ改変します](./diff_game_manager)。
 
 <!-- patch についての説明を追加する -->
 
