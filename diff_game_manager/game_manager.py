@@ -1138,9 +1138,9 @@ class Board(QFrame):
             print("")
             self.OutputLogData(isPrintLog = True)
 
-            #sys.exit(app.exec_())
-            while True:
-                1
+            sys.exit(app.exec_())
+            # while True:
+            #     1
 
             sys.exit(0)
 

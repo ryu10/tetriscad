@@ -1,8 +1,6 @@
-diff --git a/game_manager/game_manager.py b/game_manager/game_manager.py
-index 52cff83..4ec9a3d 100644
---- a/game_manager/game_manager.py
-+++ b/game_manager/game_manager.py
-@@ -765,6 +765,13 @@ class Game_Manager(QMainWindow):
+--- /Users/ryu/tmp/game_manager.py	2024-09-19 09:21:58
++++ game_manager/game_manager.py	2024-09-19 09:22:02
+@@ -765,6 +765,13 @@
                          "mode":"none",
                        },
                    }
@@ -16,7 +14,7 @@ index 52cff83..4ec9a3d 100644
          # update status
          ## debug_info
          status["debug_info"]["line_score_stat"] = self.tboard.line_score_stat
-@@ -806,6 +813,13 @@ class Game_Manager(QMainWindow):
+@@ -806,6 +813,13 @@
          status["judge_info"]["block_index"] = self.block_index
          status["judge_info"]["block_num_max"] = self.BlockNumMax
          status["judge_info"]["mode"] = self.mode
@@ -30,12 +28,14 @@ index 52cff83..4ec9a3d 100644
          return json.dumps(status)
  
      ###############################################
-@@ -1125,6 +1139,9 @@ class Board(QFrame):
+@@ -1124,7 +1138,10 @@
+             print("")
              self.OutputLogData(isPrintLog = True)
  
-             #sys.exit(app.exec_())
-+            while True:
-+                1
+-            #sys.exit(app.exec_())
++            sys.exit(app.exec_())
++            # while True:
++            #     1
 +
              sys.exit(0)
  

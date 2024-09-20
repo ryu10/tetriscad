@@ -35,12 +35,12 @@
 1. フィールドデータを色付き 3D ブロックで構成される CAD データに変換します。
 
     ```
-    python3 tetris_art_scad_gen.py --result results/result_14.json --filament filament_colors/filament_colors14.json --cmdfile build/a14cmd.sh -s 10  > build/art_14.scad
+    python tetris_art_scad_gen.py --result results/result_14.json --filament filament_colors/filament_colors14.json --cmdfile build/a14cmd.sh -s 10  > build/art_14.scad
     ```
 
     ※ `filament_colors/filament_colors*.json` はブロックの色とフィラメントデータの対応パラメータ。[このドキュメント](./shape_list.md)を参照。
 
-1. `build/art_14.scad` を [openscad](https://openscad.org/) で開いて確認します。
+1. `build/art_14.scad` を [openscad](https://openscad.org/) で開いて確認します。openscad 画面では色が正確に表示されない場合があります。
 
 ![openscad](media/openscad.png)
 ### STL ファイル生成
@@ -64,7 +64,7 @@
 
 ### カラー 3D プリント
 
-1. 前節で生成した複数の STL ファイルを混成してカラー 3D プリンタでプリントします。
+前節で生成した複数の STL ファイルを混成してカラー 3D プリンタでプリントします。
 <br> <br> Bambu A1 シリーズの場合は以下の手順でプリントします。
 
     1. 生成された stl ファイルを Finder ないしファイルエクスプローラで複数選択します。

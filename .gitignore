@@ -2,3 +2,4 @@ sb/
 build/*
 results/*
 .DS_Store
+diff_game_manager/orig
