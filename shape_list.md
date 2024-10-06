@@ -1,10 +1,10 @@
 # Shape-list 内の色名定義
 
-tetris リポジトリの Tetris Art プログラムは24ビットカラーで色指定される。これは Tetris Art のコンフィギュレーションに記述されている。
+tetris リポジトリの Tetris Art 出力データは 24 ビットカラーで色指定される。これは Tetris Art のコンフィギュレーションに記述されている。
 
-## 例と読み方
+## 色名定義の例と読み方
 
-Tetris Art リプレイのコンフィギュレーションファイルで以下の色情報が定義される
+Tetris Art リプレイのコンフィギュレーションファイルで以下の色情報が定義される。
 
 `config/art/art_config_sample1.json`
 
@@ -20,7 +20,7 @@ Tetris Art リプレイのコンフィギュレーションファイルで以下
   }
 ```
 
-いっぽう `result.json` には英語の色名とフィールド各タイルのインデックス番号（0-7）が出力される。これはどの作例でも同じ。
+いっぽう `result.json` には英語の色名とフィールド各タイルのインデックス番号（0-7）が出力される。どの作例でも同一内容。
 
 ```
 "shape_info": {
@@ -35,9 +35,11 @@ Tetris Art リプレイのコンフィギュレーションファイルで以下
 },
 ```
 
-2つの key-value をマップすればタイルのインデックス番号と24ビットカラー値が対応付けられる。なお、`result.json` の英語の色名はテトリミノのデフォルト配色であって Tetris Art では使われない。
+これら 2 つの key-value をマップすればタイルのインデックス番号と24ビットカラー値が対応付けられる。なお、`result.json` の英語の色名はテトリミノのデフォルト配色であって Tetris Art では使われない。
 
-24ビットカラー値と盤面結果画像の色合いを参考にして、3D プリントで出力する色を決める。出力色はフィラメントの選択と色の重ね方に依存するため、汎用的な計算式を求める努力はしない。プリンタに載せるフィラメント色の組み合わせの都合がいいように手動で選ぶ。フィラメント出力情報として層0 (下) の色、層1 (上) の色、3Dプリント盤面 z 方向高さ、の 3 つの値を指定する。また印刷する盤面の高さを指定する（Tetris Art リプレイの終端処理用に白Iテトリミノが繰り返し降ってくるエリアを印刷しない）
+任意の Tetris Art について、使用される 24 ビットカラー値と盤面結果画像の色合いを参考にして 3D プリントで出力する色を決める。出力色はフィラメントの選択と色の重ね方に依存するため、汎用的な計算式を求める努力はしない。プリンタに載せるフィラメント色の組み合わせの都合がいいように手動で選ぶ。
+
+各タイルのフィラメント出力用パラメータとして層 0 (下) の色、層 1 (上) の色、3Dプリント盤面 z 方向深さ（印刷面の高さ）、の 3 つの値を指定する。また印刷する盤面の y 方向の全長（下端からの長さ）を指定する。全長を制限することでリプレイの終盤で 'I' テトリミノが繰り返し降ってくるエリアを印刷しないようにする。
 
 ## Tetris Art Samples の結果画像と色指定
 
@@ -1259,14 +1261,14 @@ python start.py -l1 -m art --art_config_filepath config/art/art_config_sample11.
     {"index": 4, "color": "white"},
     {"index": 5, "color": "red"},
     {"index": 6, "color": "lgreen"},
-    {"index": 7, "color": "dblue"}
+    {"index": 7, "color": "dgreen"}
   ],
   "filament_info": {
     "white": {"color": ["white", "white"], "depth": 0},
     "black": {"color": ["black", "black"], "depth": 2},
-    "lgreen": {"color": ["magenta", "yellow"], "depth": 1},
-    "dgreen": {"color": ["magenta", "yellow"], "depth": 2},
-    "green": {"color": ["magenta", "yellow"], "depth": 1}
+    "lgreen": {"color": ["white", "green"], "depth": 1},
+    "dgreen": {"color": ["black", "green"], "depth": 2},
+    "green": {"color": ["green", "green"], "depth": 1}
   },
   "height_limit": 16
 }

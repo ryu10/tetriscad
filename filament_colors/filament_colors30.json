@@ -7,14 +7,14 @@
     {"index": 4, "color": "white"},
     {"index": 5, "color": "red"},
     {"index": 6, "color": "lgreen"},
-    {"index": 7, "color": "dblue"}
+    {"index": 7, "color": "dgreen"}
   ],
   "filament_info": {
     "white": {"color": ["white", "white"], "depth": 0},
     "black": {"color": ["black", "black"], "depth": 2},
-    "lgreen": {"color": ["magenta", "yellow"], "depth": 1},
-    "dgreen": {"color": ["magenta", "yellow"], "depth": 2},
-    "green": {"color": ["magenta", "yellow"], "depth": 1}
+    "lgreen": {"color": ["white", "green"], "depth": 1},
+    "dgreen": {"color": ["black", "green"], "depth": 2},
+    "green": {"color": ["green", "green"], "depth": 1}
   },
   "height_limit": 16
 }
